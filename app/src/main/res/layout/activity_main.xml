@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#08DB24"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_topo_principal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_logo_principal"
+            android:layout_width="73dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/baseline_home_black_18dp" />
+
+        <TextView
+            android:id="@+id/txt_titulo_principal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Banco de Dados SQLite"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFF00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_botoes_principal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_topo_principal">
+
+        <TextView
+            android:id="@+id/txt_frase_principal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecione uma opção abaixo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFF00" />
+
+        <Button
+            android:id="@+id/btnCriarBanco_principal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Criar Banco"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FDF101" />
+
+        <Button
+            android:id="@+id/btnCadastrar_principal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar Usuário"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFF00" />
+
+        <Button
+            android:id="@+id/btnConsultar_principal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consultar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#F2F807" />
+
+        <Button
+            android:id="@+id/btnAlterar_principal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alterar Dados"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#EEF807" />
+
+        <Button
+            android:id="@+id/btnExcluir_principal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Excluir dados"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#EDF702" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

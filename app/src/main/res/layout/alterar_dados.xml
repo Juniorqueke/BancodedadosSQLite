@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_alterar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF00"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_logo_alterar"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        app:srcCompat="@drawable/baseline_android_black_18dp" />
+
+    <TextView
+        android:id="@+id/txt_alterar_alterar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alterar dados"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#536DFE" />
+
+    <TextView
+        android:id="@+id/txt_nome_alterar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#536DFE" />
+
+    <EditText
+        android:id="@+id/txt_name_alterar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#536DFE" />
+
+    <EditText
+        android:id="@+id/txt_email_alterar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#536DFE" />
+
+    <EditText
+        android:id="@+id/edt_email_alterar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/txt_telefone_alterar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Telefone"
+        android:textColor="#536DFE" />
+
+    <EditText
+        android:id="@+id/edt_phone_alterar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <LinearLayout
+        android:id="@+id/layout_setas_alterar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_capAnterior_alterar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#536DFE"
+            app:srcCompat="@drawable/baseline_fast_rewind_black_18dp" />
+
+        <ImageView
+            android:id="@+id/img_voltar_alterar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#536DFE"
+            app:srcCompat="@drawable/baseline_skip_previous_black_18dp" />
+
+        <ImageView
+            android:id="@+id/img_avancar_alterar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#536DFE"
+            app:srcCompat="@drawable/baseline_skip_next_black_18dp" />
+
+        <ImageView
+            android:id="@+id/img_proximoCap_alterar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#536DFE"
+            app:srcCompat="@drawable/baseline_fast_forward_black_18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_alterarDados_alterar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_alterar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alterar"
+            android:textColor="#536DFE" />
+
+        <TextView
+            android:id="@+id/txt_status_alterar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoText="false"
+            android:text="Status" />
+        // android:text="@android:string/status_bar_notification_info_overflow" />
+    </LinearLayout>
+
+</LinearLayout>
